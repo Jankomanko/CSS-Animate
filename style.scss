@@ -1,0 +1,132 @@
+@import "boje";
+@import "reset";
+
+
+
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main img{
+    position: fixed;
+    z-index: -1;
+    background-size: cover;
+}
+
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    color: $text-color;
+    align-items: center;
+    gap: 3rem;
+}
+
+.div-one,
+.div-two,
+.div-three{
+    border: 3px solid white;
+    padding: 6rem 9rem;
+    font-size: 7rem;
+    font-weight: 800;
+    /*
+      animation: slide-down 3s ease forwards;
+                margin-top: -130vh;
+            }
+
+         @keyframes slide-down{
+            0%{
+                margin-top: -130vh;
+
+            }
+            100%{
+                margin-top: 0;
+            
+            } */
+}
+
+.div-one{
+    background-color: $dark;
+    animation: slide-down 3s ease 1s forwards;
+    margin-top: -130vh;
+    @keyframes slide-down{
+        0%{
+            margin-top: -130vh;
+        
+        }
+        100%{
+            margin-top: 0;
+        
+        }
+        }
+}
+
+
+
+.div-two{
+    background-color: $red;
+    animation: slide-down 3s ease 3s forwards;
+    margin-top: -130vh;
+    @keyframes slide-down{
+        0%{
+            margin-top: -130vh;
+        
+        }
+        100%{
+            margin-top: 0;
+        
+        }
+        }
+}
+
+
+
+.div-three{
+    background-color: $orange;
+    animation: slide-down 3s ease 5s forwards;
+    margin-top: -130vh;
+    @keyframes slide-down{
+        0%{
+            margin-top: -130vh;
+        
+        }
+        100%{
+            margin-top: 0;
+        
+        }
+        }
+}
+
+
+
+
+@media all and (max-width:1250px){
+
+    html{
+        font-size: 75%;
+    }
+}
+
+@media all and (max-width:950px){
+
+    html{
+        font-size: 55%;
+    }
+}
+
+@media all and (max-width:700px){
+
+    html{
+        font-size: 45%;
+    }
+}
+
+@media all and (max-width:550px){
+
+    html{
+        font-size: 35%;
+    }
+}
